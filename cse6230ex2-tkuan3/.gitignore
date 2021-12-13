@@ -1,0 +1,7 @@
+*.o
+*.optrpt
+compile_commands.json
+.cache/
+simulation
+*.pbs.o*
+*.pbs.e*

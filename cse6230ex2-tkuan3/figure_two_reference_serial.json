@@ -1,0 +1,61 @@
+[
+{
+  "precision" : "float",
+  "n_asteroids" : "585962",
+  "n_steps" : "100",
+  "runtime (seconds)" : "0.0702939",
+  "asteroid time steps per second" : "8.33589e+08",
+  "simulated years per second" : "14.226",
+  "error" : "20.7836"
+}
+,
+{
+  "precision" : "double",
+  "n_asteroids" : "585962",
+  "n_steps" : "100",
+  "runtime (seconds)" : "0.184366",
+  "asteroid time steps per second" : "3.17825e+08",
+  "simulated years per second" : "5.42399",
+  "error" : "20.7835"
+}
+,
+{
+  "precision" : "float",
+  "n_asteroids" : "585962",
+  "n_steps" : "1000",
+  "runtime (seconds)" : "0.683731",
+  "asteroid time steps per second" : "8.57007e+08",
+  "simulated years per second" : "1.46256",
+  "error" : "0.131055"
+}
+,
+{
+  "precision" : "double",
+  "n_asteroids" : "585962",
+  "n_steps" : "1000",
+  "runtime (seconds)" : "1.66755",
+  "asteroid time steps per second" : "3.51391e+08",
+  "simulated years per second" : "0.599683",
+  "error" : "0.130984"
+}
+,
+{
+  "precision" : "float",
+  "n_asteroids" : "585962",
+  "n_steps" : "10000",
+  "runtime (seconds)" : "6.81345",
+  "asteroid time steps per second" : "8.60007e+08",
+  "simulated years per second" : "0.146768",
+  "error" : "0.0211318"
+}
+,
+{
+  "precision" : "double",
+  "n_asteroids" : "585962",
+  "n_steps" : "10000",
+  "runtime (seconds)" : "17.1747",
+  "asteroid time steps per second" : "3.41177e+08",
+  "simulated years per second" : "0.0582251",
+  "error" : "0.00131366"
+}
+]

@@ -1,0 +1,8 @@
+CXX=nvc++
+CXXVERFLAGS=-std=c++11
+CXXINFOFLAGS=-g -Wall -Minfo=mp,vect,accel
+CXXOPTFLAGS=-tp=skylake -fast
+OMPFLAGS=-acc -ta=tesla
+GIT_HASH=$(shell git describe --always --no-match --abbrev=40 --dirty)
+GIT_BRANCH=$(shell git branch --show-current)
+CXXVERFLAGS+= -DGIT_DATA='"$(GIT_HASH) ($(GIT_BRANCH))"' -DOPT_FLAGS='"$(CXXOPTFLAGS) $(TIMESTEPFLAGS)"'

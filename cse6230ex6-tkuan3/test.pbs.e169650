@@ -1,0 +1,8 @@
+icpc: remark #10397: optimization reports are generated in *.optrpt files in the output location
+++ cat /var/spool/torque/aux//169650.sched-coc-ice.pace.gatech.edu
+++ uniq
++++ wc -l
+++ N=4
+++ OUTPUT_FILE=scatter_ring_test_169650.json
+++ mpiexec -f scatter.nodefile -n 4 ./ring-test 1000
+++ rm scatter.nodefile

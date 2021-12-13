@@ -1,0 +1,5 @@
+CXX=icpc
+CXXVERFLAGS=-std=c++11
+CXXINFOFLAGS=-g -Wall -qopt-report=5
+CXXOPTFLAGS=-xHost -O3
+OMPFLAGS=-qopenmp

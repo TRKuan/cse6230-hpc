@@ -1,0 +1,45 @@
+#PBS -q coc-ice
+#PBS -l nodes=1:ppn=24
+#PBS -l walltime=01:00:00
+
+# We want as reproducible an environment as possible
+module purge
+module load git gcc/10.1.0
+
+# clean temporary files
+make clean
+
+# Report version
+echo "Repository version:"
+git rev-parse HEAD
+
+# Check for dirty repository states
+UNTRACKED_FILES="$(git ls-files --exclude-standard --others)"
+test -z "$UNTRACKED_FILES" || (echo "Untracked files:" && echo $UNTRACKED_FILES)
+
+STAGED_FILES="$(git diff-index --cached HEAD --)"
+test -z "$STAGED_FILES" || (echo "!!! Staged files not committed (exiting):" && echo $STAGED_FILES && exit 1) || exit
+
+CHANGED_FILES="$(git diff-files --stat --)"
+test -z "$CHANGED_FILES" || (echo "!!! Changed files not committed (exiting):" && echo $CHANGED_FILES && exit 1) || exit
+
+make simulation
+
+OUTPUT_FILE="figure_one_${PBS_JOBID%%.*}.json"
+echo "[" > $OUTPUT_FILE
+
+FIRST_ITER="yes"
+for inputs in "1000 2000" "1000 3000" "1000 4000"; do
+  if [ "$FIRST_ITER" = "yes" ]; then
+    FIRST_ITER="no"
+  else
+    echo "," >> $OUTPUT_FILE
+  fi
+  ./simulation float $inputs >> $OUTPUT_FILE
+  echo "," >> $OUTPUT_FILE
+  ./simulation double $inputs >> $OUTPUT_FILE
+done
+
+echo "]" >> $OUTPUT_FILE
+
+

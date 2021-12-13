@@ -1,0 +1,5 @@
+*.o
+*.optrpt
+cloud
+compile_commands.json
+.cache/

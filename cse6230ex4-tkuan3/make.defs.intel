@@ -1,0 +1,9 @@
+CC=icc
+CVERFLAGS=-std=gnu11
+CINFOFLAGS=-g3 -Wall -qopt-report=5
+COPTFLAGS=-xHost -O3 -qopt-zmm-usage=high
+CXX=icpc
+CXXVERFLAGS=-std=c++17
+CXXINFOFLAGS=$(CINFOFLAGS)
+CXXOPTFLAGS=$(COPTFLAGS)
+OMPFLAGS=-qopenmp

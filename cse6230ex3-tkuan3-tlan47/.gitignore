@@ -1,0 +1,9 @@
+*.o
+*.optrpt
+compile_commands.json
+.cache/
+main
+*.pbs.o*
+*.pbs.e*
+*.log
+*.json

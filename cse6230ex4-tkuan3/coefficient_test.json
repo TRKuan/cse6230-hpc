@@ -1,0 +1,21 @@
+{
+  "program name": "./cloud",
+  "number of particles": 16384,
+  "number of time steps": 20000,
+  "time steps per checkpoint": 10000,
+  "time step dt": 0.0001,
+  "interaction constant k": 100,
+  "diffusive constant d": 1,
+  "domain width L": 80,
+  "particle radius r": 1,
+  "seed": 6230,
+  "estimated diffusivities": [ 0.913702, 0.839195],
+  "mean estimated diffusivity": 0.876449,
+  "total timestepping time": 50.8814,
+  "particle timesteps per second": 6.44008e+06,
+  "use direct interactions": 0,
+  "target particles per box": 16,
+  "boxes per dimension": 10,
+  "total acceleration time": 49.3645,
+  "particle interactions per second": 6.34866e+08
+}

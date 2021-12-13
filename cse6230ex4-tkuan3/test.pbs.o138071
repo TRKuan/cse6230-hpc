@@ -1,0 +1,51 @@
+---------------------------------------
+Begin PBS Prologue Tue Oct  5 23:44:44 EDT 2021
+Job ID:     138071.sched-coc-ice.pace.gatech.edu
+User ID:    tkuan3
+Job name:   test.pbs
+Queue:      coc-ice
+End PBS Prologue Tue Oct  5 23:44:44 EDT 2021
+---------------------------------------
+In directory /storage/home/hcocice1/tkuan3/cse6230ex4-tkuan3
+Repository version:
+9a7b0ca4ad0f42629cf0c8780309b7aa79f7b0f2
+Untracked files:
+.vscode/settings.json logs/basic_omp/coefficient_test.json logs/basic_omp/test.pbs.e137143 logs/basic_omp/test.pbs.o137143 logs/basic_omp/timings.json logs/basic_omp/timings.png logs/no-change/coefficient_test.json logs/no-change/test.pbs.e136890 logs/no-change/test.pbs.o136890 logs/no-change/timings.json logs/no-change/timings.png logs/omp_add_schedule_to_reduction/coefficient_test.json logs/omp_add_schedule_to_reduction/test.pbs.e137234 logs/omp_add_schedule_to_reduction/test.pbs.o137234 logs/omp_add_schedule_to_reduction/timings.json logs/omp_add_schedule_to_reduction/timings.png logs/omp_outer_parallel/coefficient_test.json logs/omp_outer_parallel/test.pbs.e137213 logs/omp_outer_parallel/test.pbs.o137213 logs/omp_outer_parallel/timings.json logs/omp_outer_parallel/timings.png logs/omp_schedule_static/coefficient_test.json logs/omp_schedule_static/test.pbs.e137170 logs/omp_schedule_static/test.pbs.o137170 logs/omp_schedule_static/timings.json logs/omp_schedule_static/timings.png logs/skip_bin/coefficient_test.json logs/skip_bin/test.pbs.e137229 logs/skip_bin/test.pbs.o137229 logs/skip_bin/timings.json logs/skip_bin/timings.png test.pbs.e138071 test.pbs.o138071
+rm -f *.o *.optrpt cloud timings.json coefficient_test.json timings.png
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o timestep.o timestep.cc
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o accelerate.o accelerate.cc
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o cloud.o cloud.cc
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o state.o state.cc
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o json.o json.cc
+icpc -std=c++17 -g3 -Wall -qopt-report=5 -xHost -O3 -qopt-zmm-usage=high -I./ -I./tictoc  -qopenmp -c -o params.o params.cc
+icpc -qopenmp -o cloud timestep.o accelerate.o cloud.o state.o json.o params.o -lm -lrt
+if [ `(for i in {1..24}; do OMP_NUM_THREADS=$i ./cloud -Np 16384 -Nt 1 | grep "mean estimated diffusivity"; done) | uniq | wc -l` == "1" ]; then \
+	echo "reproducibility check passed"; \
+else \
+	echo "reproducibiilty check failed: different coefficients computed with different thread counts" && exit -1; \
+fi
+reproducibility check passed
+rm -f timings.json && touch timings.json && delim="[" && \
+for N_p in 1 2 4 8 16 32 64; do \
+  echo $delim >> timings.json; \
+	this_L=`echo "$N_p 0.3333 20." | awk '{ print ($3 * $1^$2); }'`; \
+	this_T=`echo "$N_p 100000" | awk '{ print ($2 / ($1 * $1)); }'`; \
+	OMP_NUM_THREADS=$PBS_NP OMP_PROC_BIND=spread ./cloud -Np $(( 256 * $N_p )) -L $this_L -Nt $this_T >> timings.json; \
+	delim=","; \
+done && echo "]" >> timings.json
+python3 timings.py
+OMP_NUM_THREADS=$PBS_NP OMP_PROC_BIND=spread ./cloud -Np 16384 -Nt 20000 -Nc 10000 -L 80. > coefficient_test.json
+python3 coefficient_test.py
+coefficient test passed
+---------------------------------------
+Begin PBS Epilogue Tue Oct  5 23:46:33 EDT 2021
+Job ID:     138071.sched-coc-ice.pace.gatech.edu
+User ID:    tkuan3
+Job name:   test.pbs
+Resources:  nodes=1:ppn=24,walltime=01:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:35:16,vmem=2107164kb,walltime=00:01:50,mem=7076kb,energy_used=0
+Queue:      coc-ice
+Nodes:     
+atl1-1-02-010-1-r.pace.gatech.edu
+End PBS Epilogue Tue Oct  5 23:46:33 EDT 2021
+---------------------------------------

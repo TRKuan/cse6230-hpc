@@ -1,0 +1,400 @@
+---------------------------------------
+Begin PBS Prologue Sat Oct 16 01:32:01 EDT 2021
+Job ID:     169650.sched-coc-ice.pace.gatech.edu
+User ID:    tkuan3
+Job name:   test.pbs
+Queue:      coc-ice-multi
+End PBS Prologue Sat Oct 16 01:32:01 EDT 2021
+---------------------------------------
+In directory /storage/home/hcocice1/tkuan3/cse6230ex6-tkuan3
+Repository version:
+7cc95e3e3c1a25f73eb6d9a1e5dda96679a95508
+Untracked files:
+.vscode/settings.json test.pbs.e169650 test.pbs.o169650
+rm -f ring-test
+mpicxx -std=c++11 -xHost -O3 -g -Wall -qopt-report=5 -o ring-test ring-test.cc
+make: `ring-test' is up to date.
+MPI Version: 3.1
+MVAPICH2 Version      :	2.3.2
+MVAPICH2 Release date :	Fri August 9 22:00:00 EST 2019
+MVAPICH2 Device       :	ch3:mrail
+MVAPICH2 configure    :	--prefix=/usr/local/pace-apps/spack/packages/0.13/linux-rhel7-cascadelake/intel-19.0.5/mvapich2-2.3.2-hpgbkqoytbjh35qn2t63rdorepxcezek --enable-shared --enable-romio --disable-silent-rules --disable-new-dtags --enable-fortran=all --enable-threads=multiple --with-ch3-rank-bits=32 --enable-wrapper-rpath=yes --disable-alloca --enable-fast=all --disable-cuda --enable-registration-cache --with-pbs=/opt/torque/current --with-device=ch3:mrail --with-rdma=gen2 --disable-mcast --with-file-system=nfs+ufs
+MVAPICH2 CC           :	/var/pace-apps/spack/root/0.13/458c9a2/lib/spack/env/intel/icc    -DNDEBUG -DNVALGRIND -O2
+MVAPICH2 CXX          :	/var/pace-apps/spack/root/0.13/458c9a2/lib/spack/env/intel/icpc   -DNDEBUG -DNVALGRIND -O2
+MVAPICH2 F77          :	/var/pace-apps/spack/root/0.13/458c9a2/lib/spack/env/intel/ifort -L/lib -L/lib   -O2
+MVAPICH2 FC           :	/var/pace-apps/spack/root/0.13/458c9a2/lib/spack/env/intel/ifort   -O2
+
+MPI # Procs: 88
+MPI Wtime 1.63436e+09, precision 1e-09
+MPI Wtime is global
+MPI rank 0 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 1 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 2 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 3 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 4 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 5 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 6 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 7 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 8 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 9 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 10 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 11 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 12 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 13 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 14 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 15 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 16 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 17 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 18 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 19 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 20 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 21 of 88 on host: atl1-1-02-010-4-r.pace.gatech.edu
+MPI rank 66 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 22 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 44 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 64 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 32 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 77 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 43 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 48 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 76 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 47 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 69 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 55 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 25 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 29 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 62 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 37 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 72 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 79 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 49 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 27 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 51 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 67 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 23 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 87 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 58 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 61 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 34 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 53 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 80 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 54 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 73 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 33 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 71 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 56 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 74 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 41 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 42 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 78 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 24 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 86 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 36 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 45 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 82 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 38 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 84 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 57 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 50 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 35 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 83 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 68 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 60 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 46 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 75 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 70 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 30 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 26 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 40 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 63 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 65 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 52 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 39 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 81 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 59 of 88 on host: atl1-1-02-010-5-r.pace.gatech.edu
+MPI rank 28 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 31 of 88 on host: atl1-1-02-010-5-l.pace.gatech.edu
+MPI rank 85 of 88 on host: atl1-1-02-010-6-l.pace.gatech.edu
+MPI rank 0 of 88, message: 0
+MPI rank 1 of 88, message: 1
+MPI rank 2 of 88, message: 2
+MPI rank 3 of 88, message: 3
+MPI rank 4 of 88, message: 4
+MPI rank 5 of 88, message: 5
+MPI rank 6 of 88, message: 6
+MPI rank 7 of 88, message: 7
+MPI rank 8 of 88, message: 8
+MPI rank 9 of 88, message: 9
+MPI rank 10 of 88, message: 10
+MPI rank 11 of 88, message: 11
+MPI rank 12 of 88, message: 12
+MPI rank 13 of 88, message: 13
+MPI rank 14 of 88, message: 14
+MPI rank 15 of 88, message: 15
+MPI rank 16 of 88, message: 16
+MPI rank 17 of 88, message: 17
+MPI rank 18 of 88, message: 18
+MPI rank 19 of 88, message: 19
+MPI rank 20 of 88, message: 20
+MPI rank 21 of 88, message: 21
+MPI rank 22 of 88, message: 22
+MPI rank 23 of 88, message: 23
+MPI rank 24 of 88, message: 24
+MPI rank 25 of 88, message: 25
+MPI rank 26 of 88, message: 26
+MPI rank 27 of 88, message: 27
+MPI rank 28 of 88, message: 28
+MPI rank 29 of 88, message: 29
+MPI rank 30 of 88, message: 30
+MPI rank 31 of 88, message: 31
+MPI rank 32 of 88, message: 32
+MPI rank 33 of 88, message: 33
+MPI rank 34 of 88, message: 34
+MPI rank 35 of 88, message: 35
+MPI rank 36 of 88, message: 36
+MPI rank 37 of 88, message: 37
+MPI rank 38 of 88, message: 38
+MPI rank 39 of 88, message: 39
+MPI rank 40 of 88, message: 40
+MPI rank 41 of 88, message: 41
+MPI rank 42 of 88, message: 42
+MPI rank 43 of 88, message: 43
+MPI rank 44 of 88, message: 44
+MPI rank 45 of 88, message: 45
+MPI rank 46 of 88, message: 46
+MPI rank 47 of 88, message: 47
+MPI rank 48 of 88, message: 48
+MPI rank 49 of 88, message: 49
+MPI rank 50 of 88, message: 50
+MPI rank 51 of 88, message: 51
+MPI rank 52 of 88, message: 52
+MPI rank 53 of 88, message: 53
+MPI rank 54 of 88, message: 54
+MPI rank 55 of 88, message: 55
+MPI rank 56 of 88, message: 56
+MPI rank 57 of 88, message: 57
+MPI rank 58 of 88, message: 58
+MPI rank 59 of 88, message: 59
+MPI rank 60 of 88, message: 60
+MPI rank 61 of 88, message: 61
+MPI rank 62 of 88, message: 62
+MPI rank 63 of 88, message: 63
+MPI rank 64 of 88, message: 64
+MPI rank 65 of 88, message: 65
+MPI rank 66 of 88, message: 66
+MPI rank 67 of 88, message: 67
+MPI rank 68 of 88, message: 68
+MPI rank 69 of 88, message: 69
+MPI rank 70 of 88, message: 70
+MPI rank 71 of 88, message: 71
+MPI rank 72 of 88, message: 72
+MPI rank 73 of 88, message: 73
+MPI rank 74 of 88, message: 74
+MPI rank 75 of 88, message: 75
+MPI rank 76 of 88, message: 76
+MPI rank 77 of 88, message: 77
+MPI rank 78 of 88, message: 78
+MPI rank 79 of 88, message: 79
+MPI rank 80 of 88, message: 80
+MPI rank 81 of 88, message: 81
+MPI rank 82 of 88, message: 82
+MPI rank 83 of 88, message: 83
+MPI rank 84 of 88, message: 84
+MPI rank 85 of 88, message: 85
+MPI rank 86 of 88, message: 86
+MPI rank 87 of 88, message: 87
+MPI rank 0 of 88, message: 88
+MPI rank 1 of 88, message: 89
+MPI rank 2 of 88, message: 90
+MPI rank 3 of 88, message: 91
+MPI rank 4 of 88, message: 92
+MPI rank 5 of 88, message: 93
+MPI rank 6 of 88, message: 94
+MPI rank 7 of 88, message: 95
+MPI rank 8 of 88, message: 96
+MPI rank 9 of 88, message: 97
+MPI rank 10 of 88, message: 98
+MPI rank 11 of 88, message: 99
+MPI rank 12 of 88, message: 100
+MPI rank 13 of 88, message: 101
+MPI rank 14 of 88, message: 102
+MPI rank 15 of 88, message: 103
+MPI rank 16 of 88, message: 104
+MPI rank 17 of 88, message: 105
+MPI rank 18 of 88, message: 106
+MPI rank 19 of 88, message: 107
+MPI rank 20 of 88, message: 108
+MPI rank 21 of 88, message: 109
+MPI rank 22 of 88, message: 110
+MPI rank 23 of 88, message: 111
+MPI rank 24 of 88, message: 112
+MPI rank 25 of 88, message: 113
+MPI rank 26 of 88, message: 114
+MPI rank 27 of 88, message: 115
+MPI rank 28 of 88, message: 116
+MPI rank 29 of 88, message: 117
+MPI rank 30 of 88, message: 118
+MPI rank 31 of 88, message: 119
+MPI rank 32 of 88, message: 120
+MPI rank 33 of 88, message: 121
+MPI rank 34 of 88, message: 122
+MPI rank 35 of 88, message: 123
+MPI rank 36 of 88, message: 124
+MPI rank 37 of 88, message: 125
+MPI rank 38 of 88, message: 126
+MPI rank 39 of 88, message: 127
+MPI rank 40 of 88, message: 128
+MPI rank 41 of 88, message: 129
+MPI rank 42 of 88, message: 130
+MPI rank 43 of 88, message: 131
+MPI rank 44 of 88, message: 132
+MPI rank 45 of 88, message: 133
+MPI rank 46 of 88, message: 134
+MPI rank 47 of 88, message: 135
+MPI rank 48 of 88, message: 136
+MPI rank 49 of 88, message: 137
+MPI rank 50 of 88, message: 138
+MPI rank 51 of 88, message: 139
+MPI rank 52 of 88, message: 140
+MPI rank 53 of 88, message: 141
+MPI rank 54 of 88, message: 142
+MPI rank 55 of 88, message: 143
+MPI rank 56 of 88, message: 144
+MPI rank 57 of 88, message: 145
+MPI rank 58 of 88, message: 146
+MPI rank 59 of 88, message: 147
+MPI rank 60 of 88, message: 148
+MPI rank 61 of 88, message: 149
+MPI rank 62 of 88, message: 150
+MPI rank 63 of 88, message: 151
+MPI rank 64 of 88, message: 152
+MPI rank 65 of 88, message: 153
+MPI rank 66 of 88, message: 154
+MPI rank 67 of 88, message: 155
+MPI rank 68 of 88, message: 156
+MPI rank 69 of 88, message: 157
+MPI rank 70 of 88, message: 158
+MPI rank 71 of 88, message: 159
+MPI rank 72 of 88, message: 160
+MPI rank 73 of 88, message: 161
+MPI rank 74 of 88, message: 162
+MPI rank 75 of 88, message: 163
+MPI rank 76 of 88, message: 164
+MPI rank 77 of 88, message: 165
+MPI rank 78 of 88, message: 166
+MPI rank 79 of 88, message: 167
+MPI rank 80 of 88, message: 168
+MPI rank 81 of 88, message: 169
+MPI rank 82 of 88, message: 170
+MPI rank 83 of 88, message: 171
+MPI rank 84 of 88, message: 172
+MPI rank 85 of 88, message: 173
+MPI rank 86 of 88, message: 174
+MPI rank 87 of 88, message: 175
+MPI rank 0 of 88, message: 176
+MPI rank 1 of 88, message: 177
+MPI rank 2 of 88, message: 178
+MPI rank 3 of 88, message: 179
+MPI rank 4 of 88, message: 180
+MPI rank 5 of 88, message: 181
+MPI rank 6 of 88, message: 182
+MPI rank 7 of 88, message: 183
+MPI rank 8 of 88, message: 184
+MPI rank 9 of 88, message: 185
+MPI rank 10 of 88, message: 186
+MPI rank 11 of 88, message: 187
+MPI rank 12 of 88, message: 188
+MPI rank 13 of 88, message: 189
+MPI rank 14 of 88, message: 190
+MPI rank 15 of 88, message: 191
+MPI rank 16 of 88, message: 192
+MPI rank 17 of 88, message: 193
+MPI rank 18 of 88, message: 194
+MPI rank 19 of 88, message: 195
+MPI rank 20 of 88, message: 196
+MPI rank 21 of 88, message: 197
+MPI rank 22 of 88, message: 198
+MPI rank 23 of 88, message: 199
+MPI rank 24 of 88, message: 200
+MPI rank 25 of 88, message: 201
+MPI rank 26 of 88, message: 202
+MPI rank 27 of 88, message: 203
+MPI rank 28 of 88, message: 204
+MPI rank 29 of 88, message: 205
+MPI rank 30 of 88, message: 206
+MPI rank 31 of 88, message: 207
+MPI rank 32 of 88, message: 208
+MPI rank 33 of 88, message: 209
+MPI rank 34 of 88, message: 210
+MPI rank 35 of 88, message: 211
+MPI rank 36 of 88, message: 212
+MPI rank 37 of 88, message: 213
+MPI rank 38 of 88, message: 214
+MPI rank 39 of 88, message: 215
+MPI rank 40 of 88, message: 216
+MPI rank 41 of 88, message: 217
+MPI rank 42 of 88, message: 218
+MPI rank 43 of 88, message: 219
+MPI rank 44 of 88, message: 220
+MPI rank 45 of 88, message: 221
+MPI rank 46 of 88, message: 222
+MPI rank 47 of 88, message: 223
+MPI rank 48 of 88, message: 224
+MPI rank 49 of 88, message: 225
+MPI rank 50 of 88, message: 226
+MPI rank 51 of 88, message: 227
+MPI rank 52 of 88, message: 228
+MPI rank 53 of 88, message: 229
+MPI rank 54 of 88, message: 230
+MPI rank 55 of 88, message: 231
+MPI rank 56 of 88, message: 232
+MPI rank 57 of 88, message: 233
+MPI rank 58 of 88, message: 234
+MPI rank 59 of 88, message: 235
+MPI rank 60 of 88, message: 236
+MPI rank 61 of 88, message: 237
+MPI rank 62 of 88, message: 238
+MPI rank 63 of 88, message: 239
+MPI rank 64 of 88, message: 240
+MPI rank 65 of 88, message: 241
+MPI rank 66 of 88, message: 242
+MPI rank 67 of 88, message: 243
+MPI rank 68 of 88, message: 244
+MPI rank 69 of 88, message: 245
+MPI rank 70 of 88, message: 246
+MPI rank 71 of 88, message: 247
+MPI rank 72 of 88, message: 248
+MPI rank 73 of 88, message: 249
+MPI rank 74 of 88, message: 250
+MPI rank 75 of 88, message: 251
+MPI rank 76 of 88, message: 252
+MPI rank 77 of 88, message: 253
+MPI rank 78 of 88, message: 254
+MPI rank 79 of 88, message: 255
+MPI rank 80 of 88, message: 256
+MPI rank 81 of 88, message: 257
+MPI rank 82 of 88, message: 258
+MPI rank 83 of 88, message: 259
+MPI rank 84 of 88, message: 260
+MPI rank 85 of 88, message: 261
+MPI rank 86 of 88, message: 262
+MPI rank 87 of 88, message: 263
+{
+ "size": 88,
+ "number of trips": 3,
+ "time (seconds)": 0.00530505,
+ "seconds per message": 2.00949e-05
+}
+---------------------------------------
+Begin PBS Epilogue Sat Oct 16 01:33:05 EDT 2021
+Job ID:     169650.sched-coc-ice.pace.gatech.edu
+User ID:    tkuan3
+Job name:   test.pbs
+Resources:  nodes=4:ppn=22,walltime=00:30:00,neednodes=4:ppn=22
+Rsrc Used:  cput=00:17:16,vmem=8372884kb,walltime=00:01:02,mem=502236kb,energy_used=0
+Queue:      coc-ice-multi
+Nodes:     
+atl1-1-02-010-4-r.pace.gatech.edu atl1-1-02-010-5-l.pace.gatech.edu 
+atl1-1-02-010-5-r.pace.gatech.edu atl1-1-02-010-6-l.pace.gatech.edu
+End PBS Epilogue Sat Oct 16 01:33:11 EDT 2021
+---------------------------------------

@@ -1,0 +1,38 @@
+#PBS -q coc-ice-multi
+#PBS -l nodes=4:ppn=16
+#PBS -l walltime=00:30:00
+
+cd $PBS_O_WORKDIR
+
+echo "In directory $PWD"
+
+# Report version
+echo "Repository version:"
+git rev-parse HEAD
+
+module purge
+module load git intel mvapich2 anaconda3
+make clean
+make main
+
+FIGURE_FILE="${PWD}/buffer.json"
+FIGURE_VAR_FILE="${PWD}/vector.json"
+rm -f $FIGURE_FILE
+rm -f $FIGURE_VAR_FILE
+
+echo "[" >> $FIGURE_FILE
+echo "[" >> $FIGURE_VAR_FILE
+for N in 4 8 16 32 64 128 256 512 1024 2048; do
+    echo "N = $N"
+    mpiexec -f ${PBS_NODEFILE} -n 64 ./main -N $N >> $FIGURE_FILE
+    mpiexec -f ${PBS_NODEFILE} -n 64 ./main -N $N -var >> $FIGURE_VAR_FILE
+
+    if [ $N -lt 2048 ]; then
+        echo "," >> $FIGURE_FILE
+        echo "," >> $FIGURE_VAR_FILE
+    fi
+done
+echo "]" >> $FIGURE_FILE
+echo "]" >> $FIGURE_VAR_FILE
+
+python figures.py

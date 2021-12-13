@@ -1,0 +1,25 @@
+#PBS -q coc-ice-gpu
+#PBS -l nodes=1:ppn=24:gpus=1
+#PBS -l walltime=01:00:00
+
+cd $PBS_O_WORKDIR
+
+echo "In directory $PWD"
+
+# Report version
+echo "Repository version:"
+git rev-parse HEAD
+
+# Check for dirty repository states
+UNTRACKED_FILES="$(git ls-files --exclude-standard --others)"
+test -z "$UNTRACKED_FILES" || (echo "Untracked files:" && echo $UNTRACKED_FILES)
+
+STAGED_FILES="$(git diff-index --cached HEAD --)"
+test -z "$STAGED_FILES" || (echo "!!! Staged files not committed (exiting):" && echo $STAGED_FILES && exit 1) || exit
+
+CHANGED_FILES="$(git diff-files --stat --)"
+test -z "$CHANGED_FILES" || (echo "!!! Changed files not committed (exiting):" && echo $CHANGED_FILES && exit 1) || exit
+
+ACC_FILE="${PWD}/acc_data_${PBS_JOBID%%.*}.json"
+OMP_FILE="${PWD}/omp_data_${PBS_JOBID%%.*}.json"
+cd ./acc && (bash acc_data.sh >> $ACC_FILE) && cd ../openmp && (bash omp_data.sh >> $OMP_FILE) && cd ${PBS_O_WORKDIR}

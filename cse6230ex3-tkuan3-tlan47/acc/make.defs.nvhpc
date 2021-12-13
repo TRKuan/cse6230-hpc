@@ -1,0 +1,5 @@
+CXX=nvc++
+CXXVERFLAGS=-std=c++11
+CXXINFOFLAGS=-g -Wall -Minfo=mp,vect,accel
+CXXOPTFLAGS=-tp=skylake -fast
+OMPFLAGS=-acc -ta=tesla

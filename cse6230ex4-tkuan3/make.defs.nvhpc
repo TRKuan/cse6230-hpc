@@ -1,0 +1,12 @@
+
+NVFORTRAN=nvfortran
+FC=$(NVFORTRAN) -DNVHPC
+FFLAGS=-O2 -Wall -DRADIUS=2 -DSTAR -DNVHPC
+PRKVERSION="2020"
+NVCC=nvcc
+NVHPC_ROOT=/usr/local/pace-apps/manual/packages/nvhpc/20.7
+NVHPC_PATH=$(NVHPC_ROOT)/Linux_x86_64/20.7
+CUDAFLAGS=-g -O3 -std=c++17 --gpu-architecture=sm_70 -rdc=true -I$(NVHPC_PATH)/math_libs/11.0/include -L$(NVHPC_PATH)/math_libs/11.0/lib64
+CPPFLAGS=-DPRKVERSION=$(PRKVERSION)
+CUBLASLIBS=-lcublas -lcublasLt
+BLASLIBS=-lblas

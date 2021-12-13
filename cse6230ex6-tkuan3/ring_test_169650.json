@@ -1,0 +1,611 @@
+
+[
+{
+ "size": 2,
+ "number of trips": 1000,
+ "time (seconds)": 0.000525475,
+ "seconds per message": 2.62737e-07
+}
+,
+{
+ "size": 3,
+ "number of trips": 1000,
+ "time (seconds)": 0.000848055,
+ "seconds per message": 2.82685e-07
+}
+,
+{
+ "size": 4,
+ "number of trips": 1000,
+ "time (seconds)": 0.00115633,
+ "seconds per message": 2.89083e-07
+}
+,
+{
+ "size": 5,
+ "number of trips": 1000,
+ "time (seconds)": 0.00146866,
+ "seconds per message": 2.93732e-07
+}
+,
+{
+ "size": 6,
+ "number of trips": 1000,
+ "time (seconds)": 0.00181937,
+ "seconds per message": 3.03229e-07
+}
+,
+{
+ "size": 7,
+ "number of trips": 1000,
+ "time (seconds)": 0.00211477,
+ "seconds per message": 3.0211e-07
+}
+,
+{
+ "size": 8,
+ "number of trips": 1000,
+ "time (seconds)": 0.00242949,
+ "seconds per message": 3.03686e-07
+}
+,
+{
+ "size": 9,
+ "number of trips": 1000,
+ "time (seconds)": 0.00277901,
+ "seconds per message": 3.08779e-07
+}
+,
+{
+ "size": 10,
+ "number of trips": 1000,
+ "time (seconds)": 0.00315809,
+ "seconds per message": 3.15809e-07
+}
+,
+{
+ "size": 11,
+ "number of trips": 1000,
+ "time (seconds)": 0.00351763,
+ "seconds per message": 3.19784e-07
+}
+,
+{
+ "size": 12,
+ "number of trips": 1000,
+ "time (seconds)": 0.00390005,
+ "seconds per message": 3.25004e-07
+}
+,
+{
+ "size": 13,
+ "number of trips": 1000,
+ "time (seconds)": 0.00486541,
+ "seconds per message": 3.74262e-07
+}
+,
+{
+ "size": 14,
+ "number of trips": 1000,
+ "time (seconds)": 0.00519896,
+ "seconds per message": 3.71354e-07
+}
+,
+{
+ "size": 15,
+ "number of trips": 1000,
+ "time (seconds)": 0.0056901,
+ "seconds per message": 3.7934e-07
+}
+,
+{
+ "size": 16,
+ "number of trips": 1000,
+ "time (seconds)": 0.00601029,
+ "seconds per message": 3.75643e-07
+}
+,
+{
+ "size": 17,
+ "number of trips": 1000,
+ "time (seconds)": 0.00653815,
+ "seconds per message": 3.84597e-07
+}
+,
+{
+ "size": 18,
+ "number of trips": 1000,
+ "time (seconds)": 0.00700641,
+ "seconds per message": 3.89245e-07
+}
+,
+{
+ "size": 19,
+ "number of trips": 1000,
+ "time (seconds)": 0.00746846,
+ "seconds per message": 3.93077e-07
+}
+,
+{
+ "size": 20,
+ "number of trips": 1000,
+ "time (seconds)": 0.00779057,
+ "seconds per message": 3.89528e-07
+}
+,
+{
+ "size": 21,
+ "number of trips": 1000,
+ "time (seconds)": 0.00838232,
+ "seconds per message": 3.99158e-07
+}
+,
+{
+ "size": 22,
+ "number of trips": 1000,
+ "time (seconds)": 0.00892115,
+ "seconds per message": 4.05507e-07
+}
+,
+{
+ "size": 23,
+ "number of trips": 1000,
+ "time (seconds)": 0.011622,
+ "seconds per message": 5.05302e-07
+}
+,
+{
+ "size": 24,
+ "number of trips": 1000,
+ "time (seconds)": 0.0121858,
+ "seconds per message": 5.07742e-07
+}
+,
+{
+ "size": 25,
+ "number of trips": 1000,
+ "time (seconds)": 0.0123913,
+ "seconds per message": 4.95653e-07
+}
+,
+{
+ "size": 26,
+ "number of trips": 1000,
+ "time (seconds)": 0.0128899,
+ "seconds per message": 4.95764e-07
+}
+,
+{
+ "size": 27,
+ "number of trips": 1000,
+ "time (seconds)": 0.0131998,
+ "seconds per message": 4.88882e-07
+}
+,
+{
+ "size": 28,
+ "number of trips": 1000,
+ "time (seconds)": 0.0135994,
+ "seconds per message": 4.85693e-07
+}
+,
+{
+ "size": 29,
+ "number of trips": 1000,
+ "time (seconds)": 0.0141027,
+ "seconds per message": 4.863e-07
+}
+,
+{
+ "size": 30,
+ "number of trips": 1000,
+ "time (seconds)": 0.0142078,
+ "seconds per message": 4.73595e-07
+}
+,
+{
+ "size": 31,
+ "number of trips": 1000,
+ "time (seconds)": 0.0147085,
+ "seconds per message": 4.74468e-07
+}
+,
+{
+ "size": 32,
+ "number of trips": 1000,
+ "time (seconds)": 0.0150464,
+ "seconds per message": 4.70199e-07
+}
+,
+{
+ "size": 33,
+ "number of trips": 1000,
+ "time (seconds)": 0.0155513,
+ "seconds per message": 4.71252e-07
+}
+,
+{
+ "size": 34,
+ "number of trips": 1000,
+ "time (seconds)": 0.0161006,
+ "seconds per message": 4.73548e-07
+}
+,
+{
+ "size": 35,
+ "number of trips": 1000,
+ "time (seconds)": 0.0169072,
+ "seconds per message": 4.83063e-07
+}
+,
+{
+ "size": 36,
+ "number of trips": 1000,
+ "time (seconds)": 0.0174377,
+ "seconds per message": 4.8438e-07
+}
+,
+{
+ "size": 37,
+ "number of trips": 1000,
+ "time (seconds)": 0.0178704,
+ "seconds per message": 4.82984e-07
+}
+,
+{
+ "size": 38,
+ "number of trips": 1000,
+ "time (seconds)": 0.0199571,
+ "seconds per message": 5.25186e-07
+}
+,
+{
+ "size": 39,
+ "number of trips": 1000,
+ "time (seconds)": 0.0188563,
+ "seconds per message": 4.83495e-07
+}
+,
+{
+ "size": 40,
+ "number of trips": 1000,
+ "time (seconds)": 0.0192404,
+ "seconds per message": 4.81009e-07
+}
+,
+{
+ "size": 41,
+ "number of trips": 1000,
+ "time (seconds)": 0.0198367,
+ "seconds per message": 4.83821e-07
+}
+,
+{
+ "size": 42,
+ "number of trips": 1000,
+ "time (seconds)": 0.0203557,
+ "seconds per message": 4.8466e-07
+}
+,
+{
+ "size": 43,
+ "number of trips": 1000,
+ "time (seconds)": 0.0207448,
+ "seconds per message": 4.82437e-07
+}
+,
+{
+ "size": 44,
+ "number of trips": 1000,
+ "time (seconds)": 0.0213449,
+ "seconds per message": 4.85111e-07
+}
+,
+{
+ "size": 45,
+ "number of trips": 1000,
+ "time (seconds)": 0.0231304,
+ "seconds per message": 5.14009e-07
+}
+,
+{
+ "size": 46,
+ "number of trips": 1000,
+ "time (seconds)": 0.0234151,
+ "seconds per message": 5.09024e-07
+}
+,
+{
+ "size": 47,
+ "number of trips": 1000,
+ "time (seconds)": 0.0239167,
+ "seconds per message": 5.08866e-07
+}
+,
+{
+ "size": 48,
+ "number of trips": 1000,
+ "time (seconds)": 0.0243025,
+ "seconds per message": 5.06302e-07
+}
+,
+{
+ "size": 49,
+ "number of trips": 1000,
+ "time (seconds)": 0.024559,
+ "seconds per message": 5.01205e-07
+}
+,
+{
+ "size": 50,
+ "number of trips": 1000,
+ "time (seconds)": 0.0247838,
+ "seconds per message": 4.95677e-07
+}
+,
+{
+ "size": 51,
+ "number of trips": 1000,
+ "time (seconds)": 0.0252633,
+ "seconds per message": 4.95359e-07
+}
+,
+{
+ "size": 52,
+ "number of trips": 1000,
+ "time (seconds)": 0.0256624,
+ "seconds per message": 4.93508e-07
+}
+,
+{
+ "size": 53,
+ "number of trips": 1000,
+ "time (seconds)": 0.0256827,
+ "seconds per message": 4.84579e-07
+}
+,
+{
+ "size": 54,
+ "number of trips": 1000,
+ "time (seconds)": 0.026319,
+ "seconds per message": 4.87389e-07
+}
+,
+{
+ "size": 55,
+ "number of trips": 1000,
+ "time (seconds)": 0.0265114,
+ "seconds per message": 4.82026e-07
+}
+,
+{
+ "size": 56,
+ "number of trips": 1000,
+ "time (seconds)": 0.0274436,
+ "seconds per message": 4.90065e-07
+}
+,
+{
+ "size": 57,
+ "number of trips": 1000,
+ "time (seconds)": 0.0281014,
+ "seconds per message": 4.93008e-07
+}
+,
+{
+ "size": 58,
+ "number of trips": 1000,
+ "time (seconds)": 0.0283611,
+ "seconds per message": 4.88984e-07
+}
+,
+{
+ "size": 59,
+ "number of trips": 1000,
+ "time (seconds)": 0.0291433,
+ "seconds per message": 4.93955e-07
+}
+,
+{
+ "size": 60,
+ "number of trips": 1000,
+ "time (seconds)": 0.0332761,
+ "seconds per message": 5.54601e-07
+}
+,
+{
+ "size": 61,
+ "number of trips": 1000,
+ "time (seconds)": 0.0334535,
+ "seconds per message": 5.48417e-07
+}
+,
+{
+ "size": 62,
+ "number of trips": 1000,
+ "time (seconds)": 0.0311558,
+ "seconds per message": 5.02513e-07
+}
+,
+{
+ "size": 63,
+ "number of trips": 1000,
+ "time (seconds)": 0.0312881,
+ "seconds per message": 4.96637e-07
+}
+,
+{
+ "size": 64,
+ "number of trips": 1000,
+ "time (seconds)": 0.0346367,
+ "seconds per message": 5.41199e-07
+}
+,
+{
+ "size": 65,
+ "number of trips": 1000,
+ "time (seconds)": 0.0329711,
+ "seconds per message": 5.07248e-07
+}
+,
+{
+ "size": 66,
+ "number of trips": 1000,
+ "time (seconds)": 0.0389645,
+ "seconds per message": 5.90371e-07
+}
+,
+{
+ "size": 67,
+ "number of trips": 1000,
+ "time (seconds)": 0.0345886,
+ "seconds per message": 5.16247e-07
+}
+,
+{
+ "size": 68,
+ "number of trips": 1000,
+ "time (seconds)": 0.042881,
+ "seconds per message": 6.30603e-07
+}
+,
+{
+ "size": 69,
+ "number of trips": 1000,
+ "time (seconds)": 0.0378659,
+ "seconds per message": 5.48781e-07
+}
+,
+{
+ "size": 70,
+ "number of trips": 1000,
+ "time (seconds)": 0.0431688,
+ "seconds per message": 6.16697e-07
+}
+,
+{
+ "size": 71,
+ "number of trips": 1000,
+ "time (seconds)": 0.0396976,
+ "seconds per message": 5.59122e-07
+}
+,
+{
+ "size": 72,
+ "number of trips": 1000,
+ "time (seconds)": 0.0437236,
+ "seconds per message": 6.07272e-07
+}
+,
+{
+ "size": 73,
+ "number of trips": 1000,
+ "time (seconds)": 0.0399523,
+ "seconds per message": 5.47291e-07
+}
+,
+{
+ "size": 74,
+ "number of trips": 1000,
+ "time (seconds)": 0.047888,
+ "seconds per message": 6.47136e-07
+}
+,
+{
+ "size": 75,
+ "number of trips": 1000,
+ "time (seconds)": 0.0402548,
+ "seconds per message": 5.36731e-07
+}
+,
+{
+ "size": 76,
+ "number of trips": 1000,
+ "time (seconds)": 0.0456717,
+ "seconds per message": 6.00943e-07
+}
+,
+{
+ "size": 77,
+ "number of trips": 1000,
+ "time (seconds)": 0.0416541,
+ "seconds per message": 5.40962e-07
+}
+,
+{
+ "size": 78,
+ "number of trips": 1000,
+ "time (seconds)": 0.045608,
+ "seconds per message": 5.84719e-07
+}
+,
+{
+ "size": 79,
+ "number of trips": 1000,
+ "time (seconds)": 0.0443349,
+ "seconds per message": 5.61201e-07
+}
+,
+{
+ "size": 80,
+ "number of trips": 1000,
+ "time (seconds)": 0.0470569,
+ "seconds per message": 5.88211e-07
+}
+,
+{
+ "size": 81,
+ "number of trips": 1000,
+ "time (seconds)": 0.0451579,
+ "seconds per message": 5.57505e-07
+}
+,
+{
+ "size": 82,
+ "number of trips": 1000,
+ "time (seconds)": 0.0584972,
+ "seconds per message": 7.1338e-07
+}
+,
+{
+ "size": 83,
+ "number of trips": 1000,
+ "time (seconds)": 0.0446951,
+ "seconds per message": 5.38496e-07
+}
+,
+{
+ "size": 84,
+ "number of trips": 1000,
+ "time (seconds)": 0.0497065,
+ "seconds per message": 5.91744e-07
+}
+,
+{
+ "size": 85,
+ "number of trips": 1000,
+ "time (seconds)": 0.0458779,
+ "seconds per message": 5.3974e-07
+}
+,
+{
+ "size": 86,
+ "number of trips": 1000,
+ "time (seconds)": 0.0497935,
+ "seconds per message": 5.78994e-07
+}
+,
+{
+ "size": 87,
+ "number of trips": 1000,
+ "time (seconds)": 0.049665,
+ "seconds per message": 5.70862e-07
+}
+,
+{
+ "size": 88,
+ "number of trips": 1000,
+ "time (seconds)": 0.0527077,
+ "seconds per message": 5.98951e-07
+}
+]

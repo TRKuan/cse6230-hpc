@@ -1,0 +1,13 @@
+CXX=nvc++
+CXXOPTFLAGS=-fast
+CXXINFOFLAGS=-Minfo=vect,accel,par
+CXXVERFLAGS=-std=c++17
+CUDAC=nvcc
+CUDAOPTFLAGS=-O3
+CUDAINFOFLAGS=-g
+CUDAVERFLAGS=$(CXXVERFLAGS) --gpu-architecture=sm_70 --extended-lambda
+CUBLASLIBS=-lcublas -lcublasLt
+BLASLIBS=-lblas
+FC=nvfortran
+FINFOFLAGS=-g -Wall
+FOPTFLAGS=-O3

@@ -1,0 +1,48 @@
+#PBS -q coc-ice-multi
+#PBS -l nodes=4:ppn=22
+#PBS -l walltime=00:30:00
+
+cd $PBS_O_WORKDIR
+
+echo "In directory $PWD"
+
+# Report version
+echo "Repository version:"
+git rev-parse HEAD
+
+# Check for dirty repository states
+UNTRACKED_FILES="$(git ls-files --exclude-standard --others)"
+test -z "$UNTRACKED_FILES" || (echo "Untracked files:" && echo $UNTRACKED_FILES)
+
+STAGED_FILES="$(git diff-index --cached HEAD --)"
+test -z "$STAGED_FILES" || (echo "!!! Staged files not committed (exiting):" && echo $STAGED_FILES && exit 1) || exit
+
+CHANGED_FILES="$(git diff-files --stat --)"
+test -z "$CHANGED_FILES" || (echo "!!! Changed files not committed (exiting):" && echo $CHANGED_FILES && exit 1) || exit
+
+module purge
+module load git intel mvapich2
+make clean
+make ring-test
+
+make ring-test
+mpiexec -f ${PBS_NODEFILE} -n ${PBS_NP} ./ring-test 3 v
+
+OUTPUT_FILE="ring_test_${PBS_JOBID%%.*}.json"
+echo "" > $OUTPUT_FILE
+
+DELIM="["
+for i in $(seq 2 $PBS_NP); do
+  echo $DELIM >> $OUTPUT_FILE;
+  mpiexec -f ${PBS_NODEFILE} -n $i ./ring-test 1000 >> $OUTPUT_FILE;
+  DELIM=",";
+done
+
+echo "]" >> $OUTPUT_FILE
+
+set -x
+cat $PBS_NODEFILE | uniq > scatter.nodefile
+N=`wc -l < scatter.nodefile`
+OUTPUT_FILE="scatter_ring_test_${PBS_JOBID%%.*}.json"
+mpiexec -f scatter.nodefile -n $N ./ring-test 1000 > $OUTPUT_FILE
+rm scatter.nodefile
